@@ -16,13 +16,13 @@ cd /var/www/html
 yum install git -y
 
 # Clone the project GitHub repository to the current directory
-git clone ?????????? git url here
+git clone https://github.com/wokoci/hostWebApp.git
 
 # Copy all files, including hidden ones, from the cloned repository to the Apache web root
-cp -R host-a-static-website-on-aws/. /var/www/html/
+cp -R hostWebApp/. /var/www/html/
 
 # Remove the cloned repository directory to clean up unnecessary files
-rm -rf host-a-static-website-on-aws
+rm -rf hostWebApp
 
 # Enable the Apache HTTP Server to start automatically at system boot
 systemctl enable httpd 
